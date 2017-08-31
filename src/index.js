@@ -15,11 +15,13 @@ import 'materialize-css/dist/js/materialize.min.js';
 import Button from '../packages/button/index.js';
 import Badges from '../packages/badges/index.js';
 import Breadcrumbs from '../packages/breadcrumbs/index.js';
+import Chips from '../packages/chips/index.js';
 
 const components = [
 	Button,
 	Badges,
-	Breadcrumbs
+	Breadcrumbs,
+	Chips
 ];
 
 const materialize = {
