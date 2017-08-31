@@ -1,13 +1,27 @@
 
 /* Vue-Materialize */
 import _ from 'lodash';
-import Button from '../packages/button/index.js';
+/**
+ * Css
+ */
 import 'materialize-css/dist/css/materialize.min.css';
 import '../lib/css/font.css';
+import '../lib/css/style.css';
 import 'materialize-css/dist/js/materialize.min.js';
 
+/**
+ * Package
+ */
+import Button from '../packages/button/index.js';
+import Badges from '../packages/badges/index.js';
+import Breadcrumbs from '../packages/breadcrumbs/index.js';
+import Chips from '../packages/chips/index.js';
+
 const components = [
-	Button
+	Button,
+	Badges,
+	Breadcrumbs,
+	Chips
 ];
 
 const materialize = {
