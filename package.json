@@ -1,10 +1,16 @@
 {
-  "name": "vue-materialize",
+  "name": "vue-materialize-css",
   "version": "1.0.0",
   "description": "A simple plugins for vue",
   "main": "src/index.js",
   "scripts": {
-   
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hashemirafsan/vue-materialize"
+  },
+  "bugs": {
+    "url": "https://github.com/hashemirafsan/vue-materialize/issues"
   },
   "dependencies": {
     "materialize-css": "^0.100.2"

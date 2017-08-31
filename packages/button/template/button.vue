@@ -4,12 +4,18 @@
 		'waves-effect waves-light',
 		type ? type : '',
 		size ? 'btn-' + size : '',
-		color ? color : ''
+		color ? color : '',
+		disabled ? 'disabled' : ''
 		]"
+		@click="handleClick"
+
 	>
 		<i
 			v-if="icon"
-			class="material-icons" 
+			class="material-icons"
+			:class="[
+				pos ? pos : ''
+			]"
 		>
 		{{icon}}
 		</i>
@@ -31,6 +37,19 @@
 	        	type: String,
 	        	default: ''
 	      	},
+	      	pos: {
+	      		type: String,
+	      		default: 'left'
+	      	},
+	      	disabled : {
+	      		type: Boolean,
+	      		default: false
+	      	}
+		},
+		methods: {
+			handleClick(e) {
+				this.$emit('click', e)
+			}
 		}
 	}
 </script>
